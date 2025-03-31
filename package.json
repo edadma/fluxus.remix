@@ -1,7 +1,7 @@
 {
-  "name": "fluxus-library-template",
+  "name": "fluxus.remix",
   "version": "0.0.1",
-  "description": "A minimalist UI framework inspired by component-based design, built with Scala.js",
+  "description": "An integration of the Remix Icons for Fluxus",
   "type": "module",
   "scripts": {
     "dev": "vite",

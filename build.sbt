@@ -17,8 +17,8 @@ ThisBuild / sonatypeProfileName := "io.github.edadma"
 
 ThisBuild / scmInfo := Some(
   ScmInfo(
-    url("https://github.com/edadma/fluxus"),
-    "scm:git@github.com:edadma/fluxus.git",
+    url("https://github.com/edadma/fluxus.remix"),
+    "scm:git@github.com:edadma/fluxus.remix.git",
   ),
 )
 ThisBuild / developers := List(
@@ -30,7 +30,7 @@ ThisBuild / developers := List(
   ),
 )
 
-ThisBuild / homepage := Some(url("https://github.com/edadma/fluxus"))
+ThisBuild / homepage := Some(url("https://github.com/edadma/fluxus.remix"))
 
 ThisBuild / pomIncludeRepository := { _ => false }
 ThisBuild / publishTo := {
@@ -56,12 +56,10 @@ lazy val library = project
   .enablePlugins(ScalaJSPlugin)
   .settings(commonSettings)
   .settings(
-    name        := "fluxus-library-template",
-    description := "A template for fluxus libraries",
+    name        := "fluxus.remix",
+    description := "An integration of the Remix Icons for Fluxus",
     libraryDependencies ++= Seq(
-      "org.scalatest"    %%% "scalatest" % "3.2.19" % "test",
-      "com.lihaoyi"      %%% "pprint"    % "0.9.0"  % "test",
-      "io.github.edadma" %%% "fluxus"    % "0.0.8",
+      "io.github.edadma" %%% "fluxus" % "0.0.8",
     ),
     jsEnv                                  := new org.scalajs.jsenv.nodejs.NodeJSEnv(),
     scalaJSUseMainModuleInitializer        := true,
@@ -88,7 +86,7 @@ lazy val examples = project
     publishLocal / skip             := true,
   )
 
-lazy val fluxus_library_template = project
+lazy val fluxus_remix = project
   .in(file("."))
   .aggregate(library, examples)
   .settings(
