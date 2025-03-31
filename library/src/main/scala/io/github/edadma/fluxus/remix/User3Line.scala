@@ -1,0 +1,35 @@
+/**
+ * This icon is part of Remix Icon library (https://remixicon.com/)
+ * Licensed under the Apache License 2.0
+ * https://github.com/Remix-Design/RemixIcon/blob/master/License
+ */
+
+package io.github.edadma.fluxus.remix
+
+import io.github.edadma.fluxus._
+
+/**
+ * User3Line icon from the Remix Icon library, User & Faces category.
+ */
+case class User3LineProps(
+  size: Int = 24,
+  color: String = "currentColor",
+  className: String = ""
+)
+
+/**
+ * User3Line icon component.
+ *
+ * @example User3Line <> User3LineProps(size = 24, color = "blue")
+ */
+def User3Line = (props: User3LineProps) => {
+  svg(
+    viewBox := "0 0 24 24",
+    xmlns := "http://www.w3.org/2000/svg",
+    width := props.size.toString,
+    height := props.size.toString,
+    fill := props.color,
+    cls := props.className,
+    path(d := "M20 22H18V20C18 18.3431 16.6569 17 15 17H9C7.34315 17 6 18.3431 6 20V22H4V20C4 17.2386 6.23858 15 9 15H15C17.7614 15 20 17.2386 20 20V22ZM12 13C8.68629 13 6 10.3137 6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7C18 10.3137 15.3137 13 12 13ZM12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z")
+  )
+}

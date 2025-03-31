@@ -1,0 +1,35 @@
+/**
+ * This icon is part of Remix Icon library (https://remixicon.com/)
+ * Licensed under the Apache License 2.0
+ * https://github.com/Remix-Design/RemixIcon/blob/master/License
+ */
+
+package io.github.edadma.fluxus.remix
+
+import io.github.edadma.fluxus._
+
+/**
+ * SlowDownFill icon from the Remix Icon library, Media category.
+ */
+case class SlowDownFillProps(
+  size: Int = 24,
+  color: String = "currentColor",
+  className: String = ""
+)
+
+/**
+ * SlowDownFill icon component.
+ *
+ * @example SlowDownFill <> SlowDownFillProps(size = 24, color = "blue")
+ */
+def SlowDownFill = (props: SlowDownFillProps) => {
+  svg(
+    viewBox := "0 0 24 24",
+    xmlns := "http://www.w3.org/2000/svg",
+    width := props.size.toString,
+    height := props.size.toString,
+    fill := props.color,
+    cls := props.className,
+    path(d := "M4 13C4 15.2091 4.89543 17.2091 6.34315 18.6569L4.92893 20.0711C3.11929 18.2614 2 15.7614 2 13 2 7.47715 6.47715 3 12 3 17.5228 3 22 7.47715 22 13 22 15.7614 20.8807 18.2614 19.0711 20.0711L17.6569 18.6569C19.1046 17.2091 20 15.2091 20 13 20 8.58172 16.4183 5 12 5 7.58172 5 4 8.58172 4 13ZM8.70703 8.29297 13.5 12.5 11.5 14.5 7.29282 9.70718 8.70703 8.29297Z")
+  )
+}

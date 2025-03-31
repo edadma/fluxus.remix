@@ -1,0 +1,35 @@
+/**
+ * This icon is part of Remix Icon library (https://remixicon.com/)
+ * Licensed under the Apache License 2.0
+ * https://github.com/Remix-Design/RemixIcon/blob/master/License
+ */
+
+package io.github.edadma.fluxus.remix
+
+import io.github.edadma.fluxus._
+
+/**
+ * Dice6Fill icon from the Remix Icon library, Others category.
+ */
+case class Dice6FillProps(
+  size: Int = 24,
+  color: String = "currentColor",
+  className: String = ""
+)
+
+/**
+ * Dice6Fill icon component.
+ *
+ * @example Dice6Fill <> Dice6FillProps(size = 24, color = "blue")
+ */
+def Dice6Fill = (props: Dice6FillProps) => {
+  svg(
+    viewBox := "0 0 24 24",
+    xmlns := "http://www.w3.org/2000/svg",
+    width := props.size.toString,
+    height := props.size.toString,
+    fill := props.color,
+    cls := props.className,
+    path(d := "M5 3C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5ZM9 9.5C8.17157 9.5 7.5 8.82843 7.5 8C7.5 7.17157 8.17157 6.5 9 6.5C9.82843 6.5 10.5 7.17157 10.5 8C10.5 8.82843 9.82843 9.5 9 9.5ZM10.5 12C10.5 12.8284 9.82843 13.5 9 13.5C8.17157 13.5 7.5 12.8284 7.5 12C7.5 11.1716 8.17157 10.5 9 10.5C9.82843 10.5 10.5 11.1716 10.5 12ZM10.5 16C10.5 16.8284 9.82843 17.5 9 17.5C8.17157 17.5 7.5 16.8284 7.5 16C7.5 15.1716 8.17157 14.5 9 14.5C9.82843 14.5 10.5 15.1716 10.5 16ZM15 9.5C14.1716 9.5 13.5 8.82843 13.5 8C13.5 7.17157 14.1716 6.5 15 6.5C15.8284 6.5 16.5 7.17157 16.5 8C16.5 8.82843 15.8284 9.5 15 9.5ZM16.5 12C16.5 12.8284 15.8284 13.5 15 13.5C14.1716 13.5 13.5 12.8284 13.5 12C13.5 11.1716 14.1716 10.5 15 10.5C15.8284 10.5 16.5 11.1716 16.5 12ZM16.5 16C16.5 16.8284 15.8284 17.5 15 17.5C14.1716 17.5 13.5 16.8284 13.5 16C13.5 15.1716 14.1716 14.5 15 14.5C15.8284 14.5 16.5 15.1716 16.5 16Z")
+  )
+}

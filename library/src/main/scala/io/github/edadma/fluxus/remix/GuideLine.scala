@@ -1,0 +1,35 @@
+/**
+ * This icon is part of Remix Icon library (https://remixicon.com/)
+ * Licensed under the Apache License 2.0
+ * https://github.com/Remix-Design/RemixIcon/blob/master/License
+ */
+
+package io.github.edadma.fluxus.remix
+
+import io.github.edadma.fluxus._
+
+/**
+ * GuideLine icon from the Remix Icon library, Map category.
+ */
+case class GuideLineProps(
+  size: Int = 24,
+  color: String = "currentColor",
+  className: String = ""
+)
+
+/**
+ * GuideLine icon component.
+ *
+ * @example GuideLine <> GuideLineProps(size = 24, color = "blue")
+ */
+def GuideLine = (props: GuideLineProps) => {
+  svg(
+    viewBox := "0 0 24 24",
+    xmlns := "http://www.w3.org/2000/svg",
+    width := props.size.toString,
+    height := props.size.toString,
+    fill := props.color,
+    cls := props.className,
+    path(d := "M13 8V16C13 17.6569 11.6569 19 10 19H7.82929C7.41746 20.1652 6.30622 21 5 21C3.34315 21 2 19.6569 2 18C2 16.3431 3.34315 15 5 15C6.30622 15 7.41746 15.8348 7.82929 17H10C10.5523 17 11 16.5523 11 16V8C11 6.34315 12.3431 5 14 5H17V2L22 6L17 10V7H14C13.4477 7 13 7.44772 13 8ZM5 19C5.55228 19 6 18.5523 6 18C6 17.4477 5.55228 17 5 17C4.44772 17 4 17.4477 4 18C4 18.5523 4.44772 19 5 19Z")
+  )
+}

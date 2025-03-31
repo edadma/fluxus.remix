@@ -1,0 +1,35 @@
+/**
+ * This icon is part of Remix Icon library (https://remixicon.com/)
+ * Licensed under the Apache License 2.0
+ * https://github.com/Remix-Design/RemixIcon/blob/master/License
+ */
+
+package io.github.edadma.fluxus.remix
+
+import io.github.edadma.fluxus._
+
+/**
+ * FolderCheckLine icon from the Remix Icon library, Document category.
+ */
+case class FolderCheckLineProps(
+  size: Int = 24,
+  color: String = "currentColor",
+  className: String = ""
+)
+
+/**
+ * FolderCheckLine icon component.
+ *
+ * @example FolderCheckLine <> FolderCheckLineProps(size = 24, color = "blue")
+ */
+def FolderCheckLine = (props: FolderCheckLineProps) => {
+  svg(
+    viewBox := "0 0 24 24",
+    xmlns := "http://www.w3.org/2000/svg",
+    width := props.size.toString,
+    height := props.size.toString,
+    fill := props.color,
+    cls := props.className,
+    path(d := "M3 3C2.44772 3 2 3.44772 2 4V20C2 20.5523 2.44772 21 3 21H13V19H4V5H9.58579L11.5858 7H20V13H22V6C22 5.44772 21.5523 5 21 5H12.4142L10.4142 3H3ZM15.4645 18.4647L19 22.0002L23.9497 17.0505L22.5355 15.6362L19 19.1718L16.8787 17.0505L15.4645 18.4647Z")
+  )
+}
